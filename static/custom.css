@@ -1,0 +1,148 @@
+body {    
+    background-color: #9294ab;    
+}
+
+ul.navbar-nav {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+a.nav-link {
+    color: white !important;
+}
+
+a.nav-link:active{
+    background: #3c31db8c;
+}
+
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #d3531a;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
+
+/* Color of 3 lines */
+
+.navbar-toggler.collapsed .toggler-icon {
+    background: linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
+}
+.row {   
+    justify-content: center;
+}
+
+.form {
+    margin: 0 auto;
+    display: block;
+    width: 350px;
+}
+
+.add {
+    width: 350px;
+}
+
+.button {
+    position: relative;
+    left: 120px;
+    /* border-top: 1px solid gray; */
+    margin-top: 1em;
+}
+
+:-ms-input-placeholder {
+    color: #00000040 !important;
+}
+::placeholder {
+    color: #00000040 !important;
+}
+::-ms-input-placeholder{
+    color: #00000040;
+}
+/* .placeholder{
+    color: #00000040;
+} */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+input.search_drdw {
+    width: 87%;
+    border: 0 solid;
+    border-radius: 4px !important;
+    margin-left: 0px !important;
+    padding: 8px;
+}
